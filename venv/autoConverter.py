@@ -24,7 +24,7 @@ for root, subFolders, files in os.walk(rootdir):
 # This is the string that feeds into the Handbrake Program with all of the options that you would normally tweak in the GUI version
 # -i is input, and takes the first file name that the list feeds to it, the variable is inFile
 # -o is output and takes the outputted video file, the variable is outFile
-# -e Encoder options are x264, x265, mpeg4, mpeg2, VP8, VP9, theora
+# -e Encoder options are x264, x264_10bit, nvenc_h264, x265, x265_10bit, x265_12bit, nvenc_h265, mpeg4, mpeg2, VP8, VP9, theora
 # -q This is the adjustment for the quality slider
 # --audio-lang-list is a little tricky as sometimes a file will download with an english audio track, but it will show up as "unknown language"
 # by putting eng,und in the list it will check to see if any of the audio tracks match those and will use the first one that matches in the final file
